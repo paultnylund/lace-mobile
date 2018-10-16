@@ -1,0 +1,72 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+apply plugin: 'com.google.ar.sceneform.plugin'
+
+sceneform.asset('sampledata/models/andy.obj', // Source Asset Path
+        'default',                            // Material Path
+        'sampledata/models/andy.sfa',         // .sfa Output Path
+        'src/main/res/raw/andy')              // .sfb Output Path
+
+android {
+    …
+    defaultConfig {
+        // "AR Optional" apps must declare minSdkVersion >= 14.
+        // "AR Required" apps must declare minSdkVersion >= 24.
+        minSdkVersion 24
+        …
+        ndk {
+            /*
+             * Sceneform is available for the following ABIs:
+             * 'arm64-v8a', 'armeabi-v7a', 'x86_64' and 'x86'.
+             * Your application should include the ABIs most appropriate to
+             * minimize APK size. Listing 'arm64-v8a' is recommended.
+             *
+             * This sample app includes two ABIs:
+             * 1. 'arm64-v8a' to run on devices
+             * 2. 'x86' to run in the Android emulator
+             */
+            abiFilters 'arm64-v8a', 'x86'
+        }
+    }
+    compileOptions {
+        // Sceneform libraries use language constructs from Java 8.
+        // Add these compile options if targeting minSdkVersion < 26.
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+}
+
+dependencies {
+    …
+    // Provides ARCore Session and related resources.
+    implementation 'com.google.ar:core:1.5.0'
+
+    // Provides ArFragment, and other UX resources.
+    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.5.0'
+}
+
+buildscript {
+    ext.kotlin_version = '1.2.71'
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
