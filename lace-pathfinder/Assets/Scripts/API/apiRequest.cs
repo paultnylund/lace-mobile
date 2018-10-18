@@ -7,7 +7,7 @@ namespace API {
     public static class Request {
         public static JToken apiRequest() {
 
-            var client = new RestClient("http://lace.guide/api/graph/getGraphModel");
+            var client = new RestClient("https://lace.guide/api/graph/getGraphModel");
             var request = new RestRequest(Method.POST);
             
             request.AddHeader("Postman-Token", "26dd6e85-9f57-42c8-b91c-0cbe5b439df6");
@@ -21,6 +21,20 @@ namespace API {
             var _id = dataPackage[0]["_id"];
             var distance = dataPackage[0]["distance"];
             var graph = dataPackage[0]["graph"];
+
+            /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+            JArray item1 = (JArray)dataPackage["graph"];
+            Console.WriteLine($"J_ARRAY GRAPH ROWS: {item1}");
+            int graphRows = item1.Count;
+            Console.WriteLine($"GRAPH ROWS: {"graphRows"}");
+
+            JArray item2 = (JArray)graph[0];
+            Console.WriteLine($"J_ARRAY GRAPH COLUMNS: {item2}");
+            int graphColumns = item2.Count;
+            Console.WriteLine($"GRAPH COLUMNS: {graphColumns}");
+
+            /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.Yellow;
