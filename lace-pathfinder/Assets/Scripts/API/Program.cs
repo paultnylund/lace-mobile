@@ -5,7 +5,8 @@ namespace API {
     class Program {
         static void Main() {
             
-            Console.WriteLine(apiRequest());
+            // Console.WriteLine(apiRequest());
+            apiRequest();
         }
     }
 }

@@ -22,29 +22,22 @@ namespace API {
             var distance = dataPackage[0]["distance"];
             var graph = dataPackage[0]["graph"];
 
-            /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-            JArray item1 = (JArray)dataPackage["graph"];
-            Console.WriteLine($"J_ARRAY GRAPH ROWS: {item1}");
-            int graphRows = item1.Count;
-            Console.WriteLine($"GRAPH ROWS: {"graphRows"}");
-
-            JArray item2 = (JArray)graph[0];
-            Console.WriteLine($"J_ARRAY GRAPH COLUMNS: {item2}");
-            int graphColumns = item2.Count;
-            Console.WriteLine($"GRAPH COLUMNS: {graphColumns}");
-
-            /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+            JArray graphParsedRows = (JArray)dataPackage[0]["graph"];
+            int numRows = graphParsedRows.Count;
+            JArray graphParsedColumns = (JArray)graph[0];
+            int numColumns = graphParsedColumns.Count;
 
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine($"ID: {_id}\n");
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"DISTANCE: {distance}\n");
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.WriteLine($"GRAPH DIMENSIONS: {numRows}, {numColumns}\n");
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine($"GRAPH:\n");
-            for (int i = 0; i < 4; i++) {
-                for (int j = 0; j < 4; j++) {
+            for (int i = 0; i < numRows; i++) {
+                for (int j = 0; j < numColumns; j++) {
                     Console.Write($"{graph[i][j]} ");
                 }
                 Console.Write("\n");
