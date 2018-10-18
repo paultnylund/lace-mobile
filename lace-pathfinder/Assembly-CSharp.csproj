@@ -193,14 +193,18 @@
      <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPSession.cs" />
      <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPSessionStatus.cs" />
      <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPTrackingState.cs" />
-     <Compile Include="Assets\Scripts\Grid.cs" />
-     <Compile Include="Assets\Scripts\Populate.cs" />
-     <Compile Include="Assets\Scripts\SetCorrectCameraHeight.cs" />
+     <Compile Include="Assets\Scripts\API\HttpRequest.cs" />
+     <Compile Include="Assets\Scripts\API\obj\Debug\netcoreapp2.1\API.AssemblyInfo.cs" />
+     <Compile Include="Assets\Scripts\API\Program.cs" />
+     <Compile Include="Assets\Scripts\ARCore\SetCorrectCameraHeight.cs" />
+     <Compile Include="Assets\Scripts\Path\AStar.cs" />
+     <Compile Include="Assets\Scripts\Path\Populate.cs" />
      <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\PlaneGrid.shader" />
      <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\MobileDiffuseWithLightEstimation.shader" />
      <None Include="Assets\GoogleARCore\SDK\Materials\ARBackground.shader" />
      <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\PointCloud.shader" />
      <None Include="Assets\GoogleARCore\Examples\ComputerVision\Materials\EdgeDetectionBackground.shader" />
+     <None Include="Assets\Scripts\API\obj\Debug\netcoreapp2.1\API.csproj.FileListAbsolute.txt" />
      <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\MobileSpecularWithLightEstimation.shader" />
  <Reference Include="com.unity.render-pipelines.core.Editor">
  <HintPath>/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/Library/ScriptAssemblies/com.unity.render-pipelines.core.Editor.dll</HintPath>
