@@ -1,14 +1,12 @@
 ﻿using System;
-using static API.Request;
-using static Path.AStar;
+using static Lace.API;
+using static Lace.AStar;
 
-namespace Scripts {
+namespace Lace {
     class Program {
         static void Main() {
             
-            apiRequest();
-
-            Console.WriteLine(BestPath(0, 0, 10, 10));
+            BestPath(ApiRequest());
         }
     }
 }
