@@ -1,0 +1,11 @@
+/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/Assets/Scripts/obj/Debug/netcoreapp2.1/Scripts.csprojAssemblyReference.cache
+/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/Assets/Scripts/obj/Debug/netcoreapp2.1/Scripts.csproj.CoreCompileInputs.cache
+/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/Assets/Scripts/obj/Debug/netcoreapp2.1/Scripts.AssemblyInfoInputs.cache
+/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/Assets/Scripts/obj/Debug/netcoreapp2.1/Scripts.AssemblyInfo.cs
+/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/Assets/Scripts/bin/Debug/netcoreapp2.1/Scripts.deps.json
+/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/Assets/Scripts/bin/Debug/netcoreapp2.1/Scripts.runtimeconfig.json
+/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/Assets/Scripts/bin/Debug/netcoreapp2.1/Scripts.runtimeconfig.dev.json
+/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/Assets/Scripts/bin/Debug/netcoreapp2.1/Scripts.dll
+/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/Assets/Scripts/bin/Debug/netcoreapp2.1/Scripts.pdb
+/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/Assets/Scripts/obj/Debug/netcoreapp2.1/Scripts.dll
+/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/Assets/Scripts/obj/Debug/netcoreapp2.1/Scripts.pdb
