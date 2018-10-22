@@ -20,10 +20,13 @@ namespace Path {
                 if (currentNode == endNode) {
                     break;
                 }
-                GenSuccessors();
+                Successors();
+            }
+            if (currentNode != endNode) {
+                Environment.Exit(-1);
             }
         }
-        private void GenSuccessors() {
+        private void Successors() {
 
             int currentX = currentNode.xCoord;
             int currentY = currentNode.yCoord;
@@ -47,28 +50,26 @@ namespace Path {
             successorNodes.Add(nw);
 
             foreach (Node successor in successorNodes) {
-                successor.currentCost = currentNode.gCost() + successor.distToCurrent();
+                successor.adjGCost = currentNode.gCost + successor.distanceToNode(currentNode);
 
-                if (successor.gCost() <= successor.currentCost) {
-
-                    continue;
-
-                } else {
-
-                    if (openList.Cast<Node>().Any( i => i == successor)) {
-
+                if (openList.Cast<Node>().Any( i => i == successor)) {
+                    if (successor.gCost <= successor.adjGCost) {
                         continue;
-
-                    } else {
-
-                        if (closedList.Cast<Node>().Any( i => i == successor)) {
-
-                            if ()
-
-                        }
                     }
+                } else if (closedList.Cast<Node>().Any( i => i == successor)) {
+                        if (successor.gCost <= successor.adjGCost) {
+                            continue;
+                        }
+                        closedList.Remove(successor);
+                        openList.Add(successor);
+                } else {
+                    openList.Add(successor);
+                    successor.hCost = successor.distanceToNode(endNode);
                 }
+                successor.gCost = successor.adjGCost;
+                successor.parentNode = currentNode;
             }
+            closedList.Add(currentNode);
         }
 
         private void NodeMinFCost() {
@@ -76,37 +77,33 @@ namespace Path {
             int index = 0;
             foreach (Node node in openList) {
                 index++;
-                openFCosts[index] = node.fCost();
+                openFCosts[index] = node.fCost;
             }
             double minFCost = openFCosts.Min();
             index = 0;
             foreach (Node node in openList) {
                 index++;
-                if (node.fCost() == minFCost) {
+                if (node.fCost == minFCost) {
                     currentNode = node;
                 }
             }
         }
 
         public class Node {
+            public Node parentNode;
             public int xCoord, yCoord, density;
-            public double currentCost;
-            public double gCost() {
-                return Math.Sqrt(Math.Pow((endNode.xCoord - xCoord), 2) + Math.Pow((endNode.yCoord - yCoord), 2));
-            }
-            public double hCost() {
-                return Math.Sqrt(Math.Pow((startNode.xCoord - xCoord), 2) + Math.Pow((startNode.yCoord - yCoord), 2));
-            }
-            public double fCost() {
-                return gCost() + hCost() + density;
-            }
-            public double distToCurrent() {
-                return Math.Sqrt(Math.Pow((currentNode.xCoord - xCoord), 2) + Math.Pow((currentNode.yCoord - yCoord), 2));
+            public double gCost, adjGCost, hCost, fCost;
+            public double distanceToNode(Node node) {
+                return Math.Sqrt(Math.Pow((node.xCoord - xCoord), 2) + Math.Pow((node.yCoord - yCoord), 2));
             }
             public Node(int x, int y, int d) {
                 xCoord = x;
                 yCoord = y;
                 density = d;
+                gCost = Math.Sqrt(Math.Pow((endNode.xCoord - xCoord), 2) + Math.Pow((endNode.yCoord - yCoord), 2));
+                adjGCost = currentNode.gCost + distanceToNode(currentNode);
+                hCost = Math.Sqrt(Math.Pow((startNode.xCoord - xCoord), 2) + Math.Pow((startNode.yCoord - yCoord), 2));
+                fCost = gCost + hCost + density;
             }
         }
     }
