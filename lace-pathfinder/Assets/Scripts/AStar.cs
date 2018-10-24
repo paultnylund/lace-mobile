@@ -6,19 +6,16 @@ using Newtonsoft.Json.Linq;
 
 namespace Lace {
     public static class AStar {
-        public static int xStart = 0;
-        public static int yStart = 0;
-        public static int xEnd = 3;
-        public static int yEnd = 3;
+        public static Coordinate coordStart = new Coordinate() {X = 0, Y = 0};
+        public static Coordinate coordEnd = new Coordinate() {X = 3, Y = 3};
         public static int maxDensity = 9;
         public static JToken _id, distance, graph;
         public static int numRows, numColumns, numNodes;
         public static Node startNode, endNode, currentNode;
-        public static List<Coordinate> PathCoords = new List<Coordinate>();
+        public static List<Coordinate> Path = new List<Coordinate>();
         public static List<Node> OpenList = new List<Node>();
         public static List<Node> ClosedList = new List<Node>();
         public static List<Node> SuccessorNodes = new List<Node>();
-        public static List<Double> OpenFCosts = new List<Double>();
         public static bool solutionFlag = false;
         public static void BestPath(JToken data) {
             ParseData(data);
@@ -30,9 +27,9 @@ namespace Lace {
             distance = data[0]["distance"];
             graph = data[0]["graph"];
 
-            JArray graphParsedRows = (JArray)data[0]["graph"];
+            JArray graphParsedRows = (JArray)graph[0];
             numRows = graphParsedRows.Count;
-            JArray graphParsedColumns = (JArray)graph[0];
+            JArray graphParsedColumns = (JArray)data[0]["graph"];
             numColumns = graphParsedColumns.Count;
             numNodes = numRows * numColumns;
 
@@ -53,39 +50,39 @@ namespace Lace {
         }
         public static void InitValues() {
 
-            startNode = new Node() {xCoord = xStart, yCoord = yStart};
+            startNode = new Node() {xCoord = coordStart.X, yCoord = coordStart.Y, parentNode = null};
             startNode.initCosts();
 
             currentNode = startNode;
             currentNode.initCosts();
 
-            endNode = new Node() {xCoord = xEnd, yCoord = yEnd};
+            endNode = new Node() {xCoord = coordEnd.X, yCoord = coordEnd.Y};
             endNode.initCosts();
-            endNode.adjGCost = currentNode.gCost + endNode.distanceToNode(currentNode);;
+            endNode._adjGCost();
 
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~\n");
             Console.WriteLine($"STARTNODE");
             Console.WriteLine($"Coords: ({startNode.xCoord}, {startNode.yCoord})");
-            Console.WriteLine($"gCost: {startNode.gCost}");
-            Console.WriteLine($"hCost: {startNode.hCost}");
-            Console.WriteLine($"fCost: {startNode.fCost}");
-            Console.WriteLine($"adjGCost: {startNode.adjGCost}");
+            // Console.WriteLine($"gCost: {startNode.gCost}");
+            // Console.WriteLine($"hCost: {startNode.hCost}");
+            // Console.WriteLine($"fCost: {startNode.fCost}");
+            // Console.WriteLine($"adjGCost: {startNode.adjGCost}");
             Console.WriteLine($"density: {startNode.density}");
-            Console.WriteLine();
-            Console.WriteLine($"CURRENTNODE");
-            Console.WriteLine($"Coords: ({currentNode.xCoord}, {currentNode.yCoord})");
-            Console.WriteLine($"gCost: {currentNode.gCost}");
-            Console.WriteLine($"hCost: {currentNode.hCost}");
-            Console.WriteLine($"fCost: {currentNode.fCost}");
-            Console.WriteLine($"adjGCost: {currentNode.adjGCost}");
-            Console.WriteLine($"density: {currentNode.density}");
-            Console.WriteLine();
+            // Console.WriteLine();
+            // Console.WriteLine($"CURRENTNODE");
+            // Console.WriteLine($"Coords: ({currentNode.xCoord}, {currentNode.yCoord})");
+            // Console.WriteLine($"gCost: {currentNode.gCost}");
+            // Console.WriteLine($"hCost: {currentNode.hCost}");
+            // Console.WriteLine($"fCost: {currentNode.fCost}");
+            // Console.WriteLine($"adjGCost: {currentNode.adjGCost}");
+            // Console.WriteLine($"density: {currentNode.density}");
+            // Console.WriteLine();
             Console.WriteLine($"ENDNODE");
             Console.WriteLine($"Coords: ({endNode.xCoord}, {endNode.yCoord})");
-            Console.WriteLine($"gCost: {endNode.gCost}");
-            Console.WriteLine($"hCost: {endNode.hCost}");
-            Console.WriteLine($"fCost: {endNode.fCost}");
-            Console.WriteLine($"adjGCost: {endNode.adjGCost}");
+            // Console.WriteLine($"gCost: {endNode.gCost}");
+            // Console.WriteLine($"hCost: {endNode.hCost}");
+            // Console.WriteLine($"fCost: {endNode.fCost}");
+            // Console.WriteLine($"adjGCost: {endNode.adjGCost}");
             Console.WriteLine($"density: {endNode.density}");
             Console.WriteLine("\n~~~~~~~~~~~~~~~~~~~\n");
         }
@@ -95,42 +92,57 @@ namespace Lace {
                 NodeWithMinF();
                 ValidSuccessors();
                 CheckNodes();
-                CheckSolution();
-                if (solutionFlag == true) {
+                if ((ClosedList.Exists(n => n.xCoord == endNode.xCoord && n.yCoord == endNode.yCoord) && !OpenList.Exists(n => n.xCoord == endNode.xCoord && n.yCoord == endNode.yCoord))) {
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine($"Found Solution! – {PathCoords.Count} vertices");
+                    Console.WriteLine($"Found Solution!\n");
                     Console.ForegroundColor = ConsoleColor.White;
-                    foreach (Coordinate _coord in PathCoords) {
-                        // _coord._distFromStart();
+                    // while (currentNode != null) {
+                    //     Path.Add(new Coordinate() {
+                    //         X = currentNode.xCoord,
+                    //         Y = currentNode.yCoord
+                    //     });
+                    //     currentNode = currentNode.parentNode;
+                    // }
+                    // Path.Add(new Coordinate() {
+                    //     X = currentNode.xCoord,
+                    //     Y = currentNode.yCoord
+                    // });
+                    // currentNode = currentNode.parentNode;
+                    foreach (Coordinate _coord in Path) {
                         Console.WriteLine($"{_coord.X}, {_coord.Y}");
                     }
                     Console.WriteLine();
-                    break; 
-                }
-            }
-        }
-        public static void CheckSolution() {
-            foreach (Node _node in OpenList) {
-                if (OpenList.Exists(n => n.xCoord == endNode.xCoord && n.yCoord == endNode.yCoord)) {
-                    solutionFlag = true;
-                    PathCoords.Add(new Coordinate() {X = _node.xCoord, Y = _node.yCoord});
+                    break;
                 }
             }
         }
         public static void CheckNodes() {
-            foreach (Node successor in SuccessorNodes) {
-                if (ClosedList.Exists(_node => _node.xCoord == successor.xCoord && _node.yCoord == successor.yCoord)) {
+            for (int i = 0; i < SuccessorNodes.Count; i++) {
+                if (ClosedList.FirstOrDefault(_node => _node.xCoord == SuccessorNodes[i].xCoord && _node.yCoord == SuccessorNodes[i].yCoord) != null) {
                     continue;
                 }
-                if (!OpenList.Exists(_node => _node.xCoord == successor.xCoord && _node.yCoord == successor.yCoord)) {
-                    successor.parentNode = currentNode.parentNode;
-                    successor.adjGCost = currentNode.gCost + successor.distanceToNode(currentNode);
-                    OpenList.Add(successor);
+                if (OpenList.FirstOrDefault(_node => _node.xCoord == SuccessorNodes[i].xCoord && _node.yCoord == SuccessorNodes[i].yCoord) == null) {
+                    SuccessorNodes[i].parentNode = new Node () {
+                        xCoord = currentNode.xCoord,
+                        yCoord = currentNode.yCoord
+                    };
+                    SuccessorNodes[i] = new Node () {
+                        gCost = currentNode.gCost,
+                        hCost = currentNode.hCost,
+                        fCost = SuccessorNodes[i].gCost + SuccessorNodes[i].hCost,
+                    };
+                    OpenList.Insert(0, SuccessorNodes[i]);
+
                 } else {
-                    if (currentNode.gCost + successor.hCost < successor.fCost) {
-                        successor.gCost = currentNode.gCost;
-                        successor.fCost = successor.gCost + successor.hCost;
-                        successor.parentNode = currentNode.parentNode;
+                    if (currentNode.gCost + SuccessorNodes[i].hCost < SuccessorNodes[i].fCost) {
+                        SuccessorNodes[i].parentNode = new Node () {
+                            xCoord = currentNode.xCoord,
+                            yCoord = currentNode.yCoord
+                        };
+                        SuccessorNodes[i] = new Node () {
+                            gCost = currentNode.gCost,
+                            fCost = SuccessorNodes[i].gCost + SuccessorNodes[i].hCost,
+                        };
                     }
                 }
             }
@@ -170,13 +182,13 @@ namespace Lace {
         }
         public class Node {
             public Node parentNode;
-            public int xCoord, yCoord, density;
-            public double gCost, adjGCost, hCost, fCost;
+            public int xCoord, yCoord;
+            public double gCost, adjGCost, hCost, fCost, density;
             public void initCosts() {
-                gCost = Math.Sqrt(Math.Pow((xEnd - xCoord), 2) + Math.Pow((yEnd - yCoord), 2));
-                hCost = Math.Sqrt(Math.Pow((xStart - xCoord), 2) + Math.Pow((yStart - yCoord), 2));
-                density = graph[xCoord][yCoord].ToObject<int>();
-                fCost = gCost + hCost + density;
+                gCost = Math.Sqrt(Math.Pow((coordEnd.X - xCoord), 2) + Math.Pow((coordEnd.Y - yCoord), 2));
+                hCost = Math.Sqrt(Math.Pow((coordStart.X - xCoord), 2) + Math.Pow((coordStart.Y - yCoord), 2));
+                density = graph[xCoord][yCoord].ToObject<double>();
+                fCost = gCost + hCost * density;
             }
             public double distanceToNode(Node node) {
                 return Math.Sqrt(Math.Pow((node.xCoord - xCoord), 2) + Math.Pow((node.yCoord - yCoord), 2));
