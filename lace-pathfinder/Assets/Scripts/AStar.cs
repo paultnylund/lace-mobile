@@ -9,16 +9,17 @@ namespace Lace {
     public class AStar {
         public static JToken graph;
         public static Grid grid;
-        static Coordinate startPos = new Coordinate() {X = 0, Y = 0};
-        static Coordinate targetPos = new Coordinate() {X = 3, Y = 3};
+        static Coordinate startPos = new Coordinate() {X = 2, Y = 3};
+        static Coordinate targetPos = new Coordinate() {X = 3, Y = 0};
         public static void FindPath(JToken _data) {
             graph = _data[0]["graph"];
-            Node startNode = grid[startPos.X,startPos.Y];
-            Node targetNode = grid[targetPos.X,targetPos.Y];
+            grid = new Grid();
+            Node startNode = grid.grid[startPos.X,startPos.Y];
+            Node targetNode = grid.grid[targetPos.X,targetPos.Y];
+            Console.WriteLine(grid.grid[targetPos.X,targetPos.Y]);
             List<Node> openSet = new List<Node>();
             HashSet<Node> closedSet = new HashSet<Node>();
             openSet.Add(startNode);
-            grid = new Grid();
             while (openSet.Count > 0) {
                 Node node = openSet[0];
                 for (int i = 1; i < openSet.Count; i++) {
@@ -58,6 +59,7 @@ namespace Lace {
                 path.Add(currentNode);
                 currentNode = currentNode.parentNode;
             }
+            path.Add(startNode);
             path.Reverse();
             grid.path = path;
             foreach (Node n in grid.path) {
@@ -88,7 +90,7 @@ namespace Lace {
             }
         }
         public class Grid {
-            Node[,] grid;
+            public Node[,] grid;
             int width, height;
             static JToken data {get; set;}
             bool isWalkable;
