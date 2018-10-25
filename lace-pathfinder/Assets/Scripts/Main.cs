@@ -5,8 +5,8 @@ using static Lace.AStar;
 namespace Lace {
     class Program {
         static void Main() {
-            
-            BestPath(ApiRequest());
+
+            FindPath(ApiRequest());
         }
     }
 }
