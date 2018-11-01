@@ -1,0 +1,729 @@
+********************************************************************************
+*                    Thursday, November 1, 2018 3:47:22 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 4.0.4.230
+********************************************************************************
+*                    Thursday, November 1, 2018 3:47:22 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 4.0.4.230
+********************************************************************************
+*                    Thursday, November 1, 2018 3:47:22 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 4.0.4.230
+********************************************************************************
+*                    Thursday, November 1, 2018 3:47:22 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 4.0.4.230
+********************************************************************************
+*                    Thursday, November 1, 2018 3:47:22 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 4.0.4.230
+Platform: Mac
+Target assembly: com.unity.postprocessing.Runtime.dll
+Project directory: /Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity
+Unity Mono executable: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/bin/mono
+Compiler: Microsoft C# 7.3 (2.8.0.62830)
+
+- Compilation ------------------------------------------------
+
+Running on standalone Mono: /Library/Frameworks/Mono.framework/Commands/mono
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/CSharp70Support/Roslyn/csc.exe" -noconfig @Temp/UnityTempFile-0b4d144a5b1d74eff9fed0c5ad299ea4
+********************************************************************************
+*                    Thursday, November 1, 2018 3:47:22 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 4.0.4.230
+Unity version: 2018.2.13f1
+Platform: Mac
+Target assembly: Unity.TextMeshPro.dll
+Project directory: /Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity
+Unity Mono executable: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/bin/mono
+********************************************************************************
+Compiler: Microsoft C# 7.3 (2.8.0.62830)
+
+                    Thursday, November 1, 2018 3:47:22 PM                     *
+- Compilation ------------------------------------------------
+*****************
+
+CSharpCompilerWrapper.exe version: 4.0.4.230
+Running on standalone Mono: /Library/Frameworks/Mono.framework/Commands/mono
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/CSharp70Support/Roslyn/csc.exe" -noconfig @Temp/UnityTempFile-9cf254f0cc3fa4714895354a421ac628
+Unity version: 2018.2.13f1
+Platform: Mac
+Target assembly: com.unity.render-pipelines.core.Runtime.dll
+Project directory: /Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity
+Unity Mono executable: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/bin/mono
+Compiler: Microsoft C# 7.3 (2.8.0.62830)
+
+- Compilation ------------------------------------------------
+
+Running on standalone Mono: /Library/Frameworks/Mono.framework/Commands/mono
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/CSharp70Support/Roslyn/csc.exe" -noconfig @Temp/UnityTempFile-df0dbbdf11a4a40b580e6d616f2416e9
+Unity version: 2018.2.13f1
+Platform: Mac
+Target assembly: Unity.ShaderGraph.Editor.dll
+Project directory: /Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/2.0-api
+Unity Mono executable: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/bin/mono
+Compiler: Microsoft C# 7.3 (2.8.0.62830)
+
+- Compilation ------------------------------------------------
+
+Running on standalone Mono: /Library/Frameworks/Mono.framework/Commands/mono
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/CSharp70Support/Roslyn/csc.exe" -noconfig @Temp/UnityTempFile-805cee0a7de94475091e33b6cc4f1b3a
+Unity version: 2018.2.13f1
+Platform: Mac
+Target assembly: Unity.PackageManagerUI.Editor.dll
+Project directory: /Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/2.0-api
+Unity Mono executable: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/bin/mono
+Compiler: Microsoft C# 7.3 (2.8.0.62830)
+
+- Compilation ------------------------------------------------
+
+Running on standalone Mono: /Library/Frameworks/Mono.framework/Commands/mono
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/CSharp70Support/Roslyn/csc.exe" -noconfig @Temp/UnityTempFile-aa1981a29dce7460c8ce752c8ed13b15
+Unity version: 2018.2.13f1
+Platform: Mac
+Target assembly: UnityEditor.StandardEvents.dll
+Project directory: /Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/2.0-api
+Unity Mono executable: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/bin/mono
+Compiler: Microsoft C# 7.3 (2.8.0.62830)
+
+- Compilation ------------------------------------------------
+
+Running on standalone Mono: /Library/Frameworks/Mono.framework/Commands/mono
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/CSharp70Support/Roslyn/csc.exe" -noconfig @Temp/UnityTempFile-384f457f9821e45b2bc9b62748ef7967
+Unity version: 2018.2.13f1
+Platform: Mac
+Target assembly: com.unity.render-pipelines.core.IncludePaths.dll
+Project directory: /Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/2.0-api
+Unity Mono executable: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/bin/mono
+Compiler: Microsoft C# 7.3 (2.8.0.62830)
+
+- Compilation ------------------------------------------------
+
+Running on standalone Mono: /Library/Frameworks/Mono.framework/Commands/mono
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/CSharp70Support/Roslyn/csc.exe" -noconfig @Temp/UnityTempFile-313946a2434a84105a2d90c89a7e7df5
+Exit code: 0
+Elapsed time: 5.26 sec
+
+Exit code: 0
+Elapsed time: 5.29 sec
+
+- Output (0 lines):
+
+- Errors (0 lines):
+
+PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
+Debugging and line numbers in stack traces won't be available.
+
+- Output (0 lines):
+
+- Errors (0 lines):
+
+PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
+Debugging and line numbers in stack traces won't be available.
+
+Exit code: 0
+Elapsed time: 5.34 sec
+
+Exit code: 0
+Elapsed time: 5.49 sec
+
+- Output (0 lines):
+
+- Errors (0 lines):
+
+PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
+Debugging and line numbers in stack traces won't be available.
+
+Exit code: 0
+- Output (0 lines):
+
+- Errors (0 lines):
+
+PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
+Debugging and line numbers in stack traces won't be available.
+Elapsed time: 5.41 sec
+
+
+- Output (0 lines):
+
+- Errors (0 lines):
+
+PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
+Debugging and line numbers in stack traces won't be available.
+
+Exit code: 0
+Elapsed time: 5.47 sec
+
+- Output (0 lines):
+
+- Errors (0 lines):
+
+PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
+Debugging and line numbers in stack traces won't be available.
+
+********************************************************************************
+*                    Thursday, November 1, 2018 3:47:28 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 4.0.4.230
+Unity version: 2018.2.13f1
+Platform: Mac
+Target assembly: com.unity.postprocessing.Editor.dll
+Project directory: /Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/2.0-api
+Unity Mono executable: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/bin/mono
+Compiler: Microsoft C# 7.3 (2.8.0.62830)
+
+- Compilation ------------------------------------------------
+
+Running on standalone Mono: /Library/Frameworks/Mono.framework/Commands/mono
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/CSharp70Support/Roslyn/csc.exe" -noconfig @Temp/UnityTempFile-0b8e20b356e64428890f1b36e16cc0e5
+Exit code: 0
+Elapsed time: 5.87 sec
+
+- Output (10 lines):
+0: /Users/Paul/Library/Unity/cache/packages/packages.unity.com/com.unity.shadergraph@2.0.6-preview/Editor/Data/Nodes/Input/Basic/Vector1Node.cs(13,23): warning CS0649: Field 'Vector1Node.m_Value' is never assigned to, and will always have its default value 0
+1: /Users/Paul/Library/Unity/cache/packages/packages.unity.com/com.unity.shadergraph@2.0.6-preview/Editor/Data/Graphs/DynamicVectorMaterialSlot.cs(18,25): warning CS0649: Field 'DynamicVectorMaterialSlot.m_DefaultValue' is never assigned to, and will always have its default value
+2: /Users/Paul/Library/Unity/cache/packages/packages.unity.com/com.unity.shadergraph@2.0.6-preview/Editor/Data/Graphs/DynamicValueMaterialSlot.cs(18,27): warning CS0649: Field 'DynamicValueMaterialSlot.m_DefaultValue' is never assigned to, and will always have its default value
+3: /Users/Paul/Library/Unity/cache/packages/packages.unity.com/com.unity.shadergraph@2.0.6-preview/Editor/Data/Graphs/GradientInputMaterialSlot.cs(17,18): warning CS0649: Field 'GradientInputMaterialSlot.m_DefaultValue' is never assigned to, and will always have its default value null
+4: /Users/Paul/Library/Unity/cache/packages/packages.unity.com/com.unity.shadergraph@2.0.6-preview/Editor/Data/Graphs/Vector3MaterialSlot.cs(17,25): warning CS0649: Field 'Vector3MaterialSlot.m_DefaultValue' is never assigned to, and will always have its default value
+5: /Users/Paul/Library/Unity/cache/packages/packages.unity.com/com.unity.shadergraph@2.0.6-preview/Editor/Data/Graphs/Vector4MaterialSlot.cs(17,25): warning CS0649: Field 'Vector4MaterialSlot.m_DefaultValue' is never assigned to, and will always have its default value
+6: /Users/Paul/Library/Unity/cache/packages/packages.unity.com/com.unity.shadergraph@2.0.6-preview/Editor/Data/Graphs/Vector2MaterialSlot.cs(17,17): warning CS0649: Field 'Vector2MaterialSlot.m_DefaultValue' is never assigned to, and will always have its default value
+7: /Users/Paul/Library/Unity/cache/packages/packages.unity.com/com.unity.shadergraph@2.0.6-preview/Editor/Data/Nodes/Input/Basic/Vector2Node.cs(13,25): warning CS0649: Field 'Vector2Node.m_Value' is never assigned to, and will always have its default value
+8: /Users/Paul/Library/Unity/cache/packages/packages.unity.com/com.unity.shadergraph@2.0.6-preview/Editor/Data/Nodes/Input/Basic/Vector4Node.cs(12,25): warning CS0649: Field 'Vector4Node.m_Value' is never assigned to, and will always have its default value
+9: /Users/Paul/Library/Unity/cache/packages/packages.unity.com/com.unity.shadergraph@2.0.6-preview/Editor/Data/Nodes/Input/Basic/Vector3Node.cs(12,25): warning CS0649: Field 'Vector3Node.m_Value' is never assigned to, and will always have its default value
+
+- Errors (0 lines):
+
+PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
+Debugging and line numbers in stack traces won't be available.
+
+********************************************************************************
+*                    Thursday, November 1, 2018 3:47:28 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 4.0.4.230
+********************************************************************************
+*                    Thursday, November 1, 2018 3:47:28 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 4.0.4.230
+********************************************************************************
+*                    Thursday, November 1, 2018 3:47:28 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 4.0.4.230
+Unity version: 2018.2.13f1
+Platform: Mac
+Target assembly: com.unity.render-pipelines.lightweight.Runtime.dll
+Project directory: /Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity
+Unity Mono executable: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/bin/mono
+Compiler: Microsoft C# 7.3 (2.8.0.62830)
+
+- Compilation ------------------------------------------------
+
+Running on standalone Mono: /Library/Frameworks/Mono.framework/Commands/mono
+Unity version: 2018.2.13f1
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/CSharp70Support/Roslyn/csc.exe" -noconfig @Temp/UnityTempFile-1adc384976c5648eba24970c3eeaf867
+Platform: Mac
+Target assembly: com.unity.render-pipelines.core.Editor.dll
+Project directory: /Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/2.0-api
+Unity Mono executable: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/bin/mono
+Compiler: Microsoft C# 7.3 (2.8.0.62830)
+
+- Compilation ------------------------------------------------
+
+Running on standalone Mono: /Library/Frameworks/Mono.framework/Commands/mono
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/CSharp70Support/Roslyn/csc.exe" -noconfig @Temp/UnityTempFile-1a2279869b6d2431a90672556758446d
+Unity version: 2018.2.13f1
+Platform: Mac
+Target assembly: Unity.TextMeshPro.Editor.dll
+Project directory: /Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/2.0-api
+Unity Mono executable: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/bin/mono
+Compiler: Microsoft C# 7.3 (2.8.0.62830)
+
+- Compilation ------------------------------------------------
+
+Running on standalone Mono: /Library/Frameworks/Mono.framework/Commands/mono
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/CSharp70Support/Roslyn/csc.exe" -noconfig @Temp/UnityTempFile-c0df2e0f256314edaaf45c950edea8ff
+Exit code: 0
+Elapsed time: 3.35 sec
+
+- Output (1 line):
+0: /Users/Paul/Library/Unity/cache/packages/packages.unity.com/com.unity.render-pipelines.lightweight@2.0.6-preview/LWRP/LightweightAdditionalCameraData.cs(16,49): warning CS0649: Field 'LightweightAdditionalCameraData.m_Version' is never assigned to, and will always have its default value 0
+
+- Errors (0 lines):
+
+PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
+Debugging and line numbers in stack traces won't be available.
+
+Exit code: 0
+Elapsed time: 3.35 sec
+
+- Output (0 lines):
+
+- Errors (0 lines):
+
+PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
+Debugging and line numbers in stack traces won't be available.
+
+Exit code: 0
+Elapsed time: 3.36 sec
+
+- Output (0 lines):
+
+- Errors (0 lines):
+
+PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
+Debugging and line numbers in stack traces won't be available.
+
+Exit code: 0
+Elapsed time: 3.79 sec
+
+- Output (0 lines):
+
+- Errors (0 lines):
+
+PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
+Debugging and line numbers in stack traces won't be available.
+
+********************************************************************************
+*                    Thursday, November 1, 2018 3:47:32 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 4.0.4.230
+Unity version: 2018.2.13f1
+Platform: Mac
+Target assembly: com.unity.render-pipelines.lightweight.Editor.dll
+Project directory: /Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/2.0-api
+Unity Mono executable: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/bin/mono
+Compiler: Microsoft C# 7.3 (2.8.0.62830)
+
+- Compilation ------------------------------------------------
+
+Running on standalone Mono: /Library/Frameworks/Mono.framework/Commands/mono
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/CSharp70Support/Roslyn/csc.exe" -noconfig @Temp/UnityTempFile-6857cf3aed51642b98da846f12374500
+Exit code: 0
+Elapsed time: 2.26 sec
+
+- Output (0 lines):
+
+- Errors (0 lines):
+
+PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
+Debugging and line numbers in stack traces won't be available.
+
+********************************************************************************
+*                    Thursday, November 1, 2018 3:47:36 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 4.0.4.230
+Unity version: 2018.2.13f1
+Platform: Mac
+Target assembly: Assembly-CSharp.dll
+Project directory: /Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity
+Unity Mono executable: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/bin/mono
+Compiler: Microsoft C# 7.3 (2.8.0.62830)
+
+- Compilation ------------------------------------------------
+
+Running on standalone Mono: /Library/Frameworks/Mono.framework/Commands/mono
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/CSharp70Support/Roslyn/csc.exe" -noconfig @Temp/UnityTempFile-55f2ce24ff1984a328121f3528030b1a
+Exit code: 1
+Elapsed time: 0.71 sec
+
+- Output (7 lines):
+0: Assets/Scripts/API.cs(66,31): error CS1514: { expected
+1: Assets/Scripts/API.cs(66,31): error CS1513: } expected
+2: Assets/Scripts/API.cs(66,46): error CS8124: Tuple must contain at least two elements.
+3: Assets/Scripts/API.cs(67,5): error CS1519: Invalid token '{' in class, struct, or interface member declaration
+4: Assets/Scripts/API.cs(68,43): error CS1519: Invalid token '(' in class, struct, or interface member declaration
+5: Assets/Scripts/API.cs(68,79): error CS1519: Invalid token ';' in class, struct, or interface member declaration
+6: Assets/Scripts/API.cs(82,1): error CS1022: Type or namespace definition, or end-of-file expected
+
+- Errors (0 lines):
+
+********************************************************************************
+*                    Thursday, November 1, 2018 3:48:32 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 4.0.4.230
+Unity version: 2018.2.13f1
+Platform: Mac
+Target assembly: Assembly-CSharp.dll
+Project directory: /Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity
+Unity Mono executable: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/bin/mono
+Compiler: Microsoft C# 7.3 (2.8.0.62830)
+
+- Compilation ------------------------------------------------
+
+Running on standalone Mono: /Library/Frameworks/Mono.framework/Commands/mono
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/CSharp70Support/Roslyn/csc.exe" -noconfig @Temp/UnityTempFile-78417cf9d1f664193bd8c69c6169639e
+Exit code: 1
+Elapsed time: 1.73 sec
+
+- Output (10 lines):
+0: Assets/CSharp vNext Support/AsyncTools/UnityTaskScheduler.cs(5,24): error CS0234: The type or namespace name 'Tasks' does not exist in the namespace 'System.Threading' (are you missing an assembly reference?)
+1: Assets/CSharp vNext Support/AsyncTools/UnityTaskScheduler.cs(7,35): error CS0246: The type or namespace name 'TaskScheduler' could not be found (are you missing a using directive or an assembly reference?)
+2: Assets/CSharp vNext Support/AsyncTools/UnityTaskScheduler.cs(14,33): error CS0246: The type or namespace name 'Task' could not be found (are you missing a using directive or an assembly reference?)
+3: Assets/CSharp vNext Support/AsyncTools/UnityTaskScheduler.cs(22,36): error CS0246: The type or namespace name 'Task' could not be found (are you missing a using directive or an assembly reference?)
+4: Assets/CSharp vNext Support/AsyncTools/UnityTaskScheduler.cs(30,47): error CS0246: The type or namespace name 'Task' could not be found (are you missing a using directive or an assembly reference?)
+5: Assets/CSharp vNext Support/AsyncTools/UnityTaskScheduler.cs(14,39): error CS0115: 'UnityTaskScheduler.GetScheduledTasks()': no suitable method found to override
+6: Assets/CSharp vNext Support/AsyncTools/UnityTaskScheduler.cs(22,26): error CS0115: 'UnityTaskScheduler.QueueTask(Task)': no suitable method found to override
+7: Assets/CSharp vNext Support/AsyncTools/UnityTaskScheduler.cs(30,26): error CS0115: 'UnityTaskScheduler.TryExecuteTaskInline(Task, bool)': no suitable method found to override
+8: Assets/CSharp vNext Support/AsyncTools/UnityTaskScheduler.cs(10,30): error CS0246: The type or namespace name 'Task' could not be found (are you missing a using directive or an assembly reference?)
+9: Assets/Scripts/API.cs(65,30): error CS1109: Extension methods must be defined in a top level static class; Serialize is a nested class
+
+- Errors (0 lines):
+
+********************************************************************************
+*                    Thursday, November 1, 2018 3:51:50 PM                     *
+********************************************************************************
+*                    Thursday, November 1, 2018 3:51:50 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 4.0.4.230
+CSharpCompilerWrapper.exe version: 4.0.4.230
+********************************************************************************
+*                    Thursday, November 1, 2018 3:51:50 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 4.0.4.230
+********************************************************************************
+*                    Thursday, November 1, 2018 3:51:50 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 4.0.4.230
+Unity version: 2018.2.13f1
+Platform: Mac
+Target assembly: com.unity.postprocessing.Runtime.dll
+Project directory: /Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity
+Unity Mono executable: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/bin/mono
+Unity version: 2018.2.13f1
+********************************************************************************
+*                    Thursday, November 1, 2018 3:51:50 PM                     *
+********************************************************************************
+Compiler: Microsoft C# 7.3 (2.8.0.62830)
+
+latform: Mac
+Target assembly: Unity.TextMeshPro.dll
+- Compilation ------------------------------------------------
+Project directory: /Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder
+
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity
+Unity Mono executable: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/bin/mono
+CSharpCompilerWrapper.exe version: 4.0.4.230
+Running on standalone Mono: /Library/Frameworks/Mono.framework/Commands/mono
+Compiler: Microsoft C# 7.3 (2.8.0.62830)
+
+- Compilation ------------------------------------------------
+
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/CSharp70Support/Roslyn/csc.exe" -noconfig @Temp/UnityTempFile-afd601098eb8f4d8188b467536ce65f7
+Running on standalone Mono: /Library/Frameworks/Mono.framework/Commands/mono
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/CSharp70Support/Roslyn/csc.exe" -noconfig @Temp/UnityTempFile-465bcb92b53fd445d8d54d0d75071d48
+Unity version: 2018.2.13f1
+Platform: Mac
+Target assembly: com.unity.render-pipelines.core.Runtime.dll
+Project directory: /Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity
+Unity Mono executable: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/bin/mono
+Compiler: Microsoft C# 7.3 (2.8.0.62830)
+
+- Compilation ------------------------------------------------
+
+Running on standalone Mono: /Library/Frameworks/Mono.framework/Commands/mono
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/CSharp70Support/Roslyn/csc.exe" -noconfig @Temp/UnityTempFile-0d5407ab79c6f49838e64ade7a16ae5a
+********************************************************************************
+*                    Thursday, November 1, 2018 3:51:51 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 4.0.4.230
+Unity version: 2018.2.13f1
+********************************************************************************
+sers/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/2.0-api
+Unity Mono executable: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/bin/mono
+*                    Thursday, November 1, 2018 3:51:51 PM                     *
+********************************************************************************
+Compiler: Microsoft C# 7.3 (2.8.0.62830)
+
+- Compilation ------------------------------------------------
+
+CSharpCompilerWrapper.exe version: 4.0.4.230
+Running on standalone Mono: /Library/Frameworks/Mono.framework/Commands/mono
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/CSharp70Support/Roslyn/csc.exe" -noconfig @Temp/UnityTempFile-6c6a1375de4cc465fbb9dc669cfdb1e1
+Unity version: 2018.2.13f1
+Platform: Mac
+Target assembly: Unity.PackageManagerUI.Editor.dll
+Project directory: /Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/2.0-api
+Unity Mono executable: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/bin/mono
+Compiler: Microsoft C# 7.3 (2.8.0.62830)
+
+- Compilation ------------------------------------------------
+
+Running on standalone Mono: /Library/Frameworks/Mono.framework/Commands/mono
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/CSharp70Support/Roslyn/csc.exe" -noconfig @Temp/UnityTempFile-a277a906d243f49eb92b7779a32b17fb
+Unity version: 2018.2.13f1
+Platform: Mac
+Target assembly: UnityEditor.StandardEvents.dll
+Project directory: /Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/2.0-api
+Unity Mono executable: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/bin/mono
+Compiler: Microsoft C# 7.3 (2.8.0.62830)
+
+- Compilation ------------------------------------------------
+
+Running on standalone Mono: /Library/Frameworks/Mono.framework/Commands/mono
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/CSharp70Support/Roslyn/csc.exe" -noconfig @Temp/UnityTempFile-0cf32e3b75c804e71a3c373933fbab3e
+Unity version: 2018.2.13f1
+Platform: Mac
+Target assembly: com.unity.render-pipelines.core.IncludePaths.dll
+Project directory: /Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/2.0-api
+Unity Mono executable: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/bin/mono
+Compiler: Microsoft C# 7.3 (2.8.0.62830)
+
+- Compilation ------------------------------------------------
+
+Running on standalone Mono: /Library/Frameworks/Mono.framework/Commands/mono
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/CSharp70Support/Roslyn/csc.exe" -noconfig @Temp/UnityTempFile-825ef46ac9ffc4396ba7b954c78d655a
+Exit code: 0
+Exit code: 0
+Elapsed time: 5.21 sec
+
+Elapsed time: 5.24 sec
+
+- Output (0 lines):
+- Output (0 lines):
+
+- Errors (0 lines):
+
+
+- Errors (0 lines):
+
+PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
+Debugging and line numbers in stack traces won't be available.
+PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
+
+Debugging and line numbers in stack traces won't be available.
+
+Exit code: 0
+Elapsed time: 5.30 sec
+
+- Output (0 lines):
+Exit code: 0
+
+- Errors (0 lines):
+
+PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
+Debugging and line numbers in stack traces won't be available.
+
+Elapsed time: 5.41 sec
+
+Exit code: 0
+Elapsed time: 5.44 sec
+
+- Output (0 lines):
+
+- Errors (0 lines):
+
+PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
+Debugging and line numbers in stack traces won't be available.
+
+- Output (0 lines):
+
+- Errors (0 lines):
+
+PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
+Debugging and line numbers in stack traces won't be available.
+
+Exit code: 0
+Elapsed time: 5.48 sec
+
+- Output (0 lines):
+
+- Errors (0 lines):
+
+PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
+Debugging and line numbers in stack traces won't be available.
+
+Exit code: 0
+Elapsed time: 5.84 sec
+
+********************************************************************************
+*                    Thursday, November 1, 2018 3:51:56 PM                     *
+- Output (10 lines):
+********************************************************************************
+0: /Users/Paul/Library/Unity/cache/packages/packages.unity.com/com.unity.shadergraph@2.0.6-preview/Editor/Data/Nodes/Input/Basic/Vector4Node.cs(12,25): warning CS0649: Field 'Vector4Node.m_Value' is never assigned to, and will always have its default value
+1: /Users/Paul/Library/Unity/cache/packages/packages.unity.com/com.unity.shadergraph@2.0.6-preview/Editor/Data/Graphs/Vector3MaterialSlot.cs(17,25): warning CS0649: Field 'Vector3MaterialSlot.m_DefaultValue' is never assigned to, and will always have its default value
+2: /Users/Paul/Library/Unity/cache/packages/packages.unity.com/com.unity.shadergraph@2.0.6-preview/Editor/Data/Graphs/Vector2MaterialSlot.cs(17,17): warning CS0649: Field 'Vector2MaterialSlot.m_DefaultValue' is never assigned to, and will always have its default value
+3: /Users/Paul/Library/Unity/cache/packages/packages.unity.com/com.unity.shadergraph@2.0.6-preview/Editor/Data/Nodes/Input/Basic/Vector2Node.cs(13,25): warning CS0649: Field 'Vector2Node.m_Value' is never assigned to, and will always have its default value
+4: /Users/Paul/Library/Unity/cache/packages/packages.unity.com/com.unity.shadergraph@2.0.6-preview/Editor/Data/Graphs/DynamicVectorMaterialSlot.cs(18,25): warning CS0649: Field 'DynamicVectorMaterialSlot.m_DefaultValue' is never assigned to, and will always have its default value
+5: /Users/Paul/Library/Unity/cache/packages/packages.unity.com/com.unity.shadergraph@2.0.6-preview/Editor/Data/Graphs/GradientInputMaterialSlot.cs(17,18): warning CS0649: Field 'GradientInputMaterialSlot.m_DefaultValue' is never assigned to, and will always have its default value null
+6: /Users/Paul/Library/Unity/cache/packages/packages.unity.com/com.unity.shadergraph@2.0.6-preview/Editor/Data/Graphs/Vector4MaterialSlot.cs(17,25): warning CS0649: Field 'Vector4MaterialSlot.m_DefaultValue' is never assigned to, and will always have its default value
+7: /Users/Paul/Library/Unity/cache/packages/packages.unity.com/com.unity.shadergraph@2.0.6-preview/Editor/Data/Nodes/Input/Basic/Vector1Node.cs(13,23): warning CS0649: Field 'Vector1Node.m_Value' is never assigned to, and will always have its default value 0
+8: /Users/Paul/Library/Unity/cache/packages/packages.unity.com/com.unity.shadergraph@2.0.6-preview/Editor/Data/Graphs/DynamicValueMaterialSlot.cs(18,27): warning CS0649: Field 'DynamicValueMaterialSlot.m_DefaultValue' is never assigned to, and will always have its default value
+9: /Users/Paul/Library/Unity/cache/packages/packages.unity.com/com.unity.shadergraph@2.0.6-preview/Editor/Data/Nodes/Input/Basic/Vector3Node.cs(12,25): warning CS0649: Field 'Vector3Node.m_Value' is never assigned to, and will always have its default value
+
+- Errors (0 lines):
+
+CSharpCompilerWrapper.exe version: 4.0.4.230
+PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
+Debugging and line numbers in stack traces won't be available.
+
+********************************************************************************
+*                    Thursday, November 1, 2018 3:51:56 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 4.0.4.230
+Unity version: 2018.2.13f1
+Platform: Mac
+Target assembly: com.unity.render-pipelines.core.Editor.dll
+Project directory: /Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/2.0-api
+Unity Mono executable: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/bin/mono
+Compiler: Microsoft C# 7.3 (2.8.0.62830)
+
+- Compilation ------------------------------------------------
+
+Running on standalone Mono: /Library/Frameworks/Mono.framework/Commands/mono
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/CSharp70Support/Roslyn/csc.exe" -noconfig @Temp/UnityTempFile-9d7dbf0ec794142cda291290aed9414e
+Unity version: 2018.2.13f1
+Platform: Mac
+Target assembly: Unity.TextMeshPro.Editor.dll
+Project directory: /Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/2.0-api
+Unity Mono executable: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/bin/mono
+Compiler: Microsoft C# 7.3 (2.8.0.62830)
+
+- Compilation ------------------------------------------------
+
+Running on standalone Mono: /Library/Frameworks/Mono.framework/Commands/mono
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/CSharp70Support/Roslyn/csc.exe" -noconfig @Temp/UnityTempFile-dc78c7fff6e394690acc7741af69da8c
+********************************************************************************
+*                    Thursday, November 1, 2018 3:51:57 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 4.0.4.230
+********************************************************************************
+*                    Thursday, November 1, 2018 3:51:57 PM                     *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 4.0.4.230
+Unity version: 2018.2.13f1
+Platform: Mac
+Target assembly: com.unity.render-pipelines.lightweight.Runtime.dll
+Project directory: /Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity
+Unity Mono executable: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/bin/mono
+Compiler: Microsoft C# 7.3 (2.8.0.62830)
+
+- Compilation ------------------------------------------------
+
+Running on standalone Mono: /Library/Frameworks/Mono.framework/Commands/mono
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/CSharp70Support/Roslyn/csc.exe" -noconfig @Temp/UnityTempFile-3a1fa3e1c91604e4093e32a69ff9ee41
+Unity version: 2018.2.13f1
+Platform: Mac
+Target assembly: com.unity.postprocessing.Editor.dll
+Project directory: /Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/2.0-api
+Unity Mono executable: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/bin/mono
+Compiler: Microsoft C# 7.3 (2.8.0.62830)
+
+- Compilation ------------------------------------------------
+
+Running on standalone Mono: /Library/Frameworks/Mono.framework/Commands/mono
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/CSharp70Support/Roslyn/csc.exe" -noconfig @Temp/UnityTempFile-b991177ef0b4f4078b1c2b0575a78023
+Exit code: 0
+Elapsed time: 3.29 sec
+
+- Output (0 lines):
+
+- Errors (0 lines):
+
+PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
+Debugging and line numbers in stack traces won't be available.
+
+Exit code: 0
+Elapsed time: 3.43 sec
+
+- Output (1 line):
+0: /Users/Paul/Library/Unity/cache/packages/packages.unity.com/com.unity.render-pipelines.lightweight@2.0.6-preview/LWRP/LightweightAdditionalCameraData.cs(16,49): warning CS0649: Field 'LightweightAdditionalCameraData.m_Version' is never assigned to, and will always have its default value 0
+
+- Errors (0 lines):
+
+PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
+Debugging and line numbers in stack traces won't be available.
+
+Exit code: 0
+Elapsed time: 3.43 sec
+
+- Output (0 lines):
+
+- Errors (0 lines):
+
+PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
+Debugging and line numbers in stack traces won't be available.
+
+Exit code: 0
+Elapsed time: 3.79 sec
+
+********************************************************************************
+- Errors (0 lines):
+
+*                    Thursday, November 1, 2018 3:52:00 PM                     *
+********************************************************************************
+PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
+Debugging and line numbers in stack traces won't be available.
+
+CSharpCompilerWrapper.exe version: 4.0.4.230
+Unity version: 2018.2.13f1
+Platform: Mac
+Target assembly: com.unity.render-pipelines.lightweight.Editor.dll
+Project directory: /Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/2.0-api
+Unity Mono executable: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/bin/mono
+Compiler: Microsoft C# 7.3 (2.8.0.62830)
+
+- Compilation ------------------------------------------------
+
+Running on standalone Mono: /Library/Frameworks/Mono.framework/Commands/mono
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/Paul/Documents/SDU/Thesis/lace-mobile/lace-pathfinder/CSharp70Support/Roslyn/csc.exe" -noconfig @Temp/UnityTempFile-fa443dd90c5e542d3bfe6fae9124ae96
+Exit code: 0
+Elapsed time: 2.25 sec
+
+- Output (0 lines):
+
+- Errors (0 lines):
+
+PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
+Debugging and line numbers in stack traces won't be available.
+

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -65,9 +65,9 @@ public class CurvedLineRenderer : MonoBehaviour
 			Vector3[] smoothedPoints = LineSmoother.SmoothLine( linePositions, lineSegmentSize );
 
 			//set line settings
-			line.SetVertexCount( smoothedPoints.Length );
-			line.SetPositions( smoothedPoints );
-			line.SetWidth( lineWidth, lineWidth );
+			line.SetVertexCount(smoothedPoints.Length);
+			line.SetPositions(smoothedPoints);
+			line.SetWidth(lineWidth,lineWidth);
 		}
 	}
 
