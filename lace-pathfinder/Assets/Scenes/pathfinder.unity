@@ -339,9 +339,6 @@ GameObject:
   - component: {fileID: 1043178401}
   - component: {fileID: 1043178400}
   - component: {fileID: 1043178399}
-  - component: {fileID: 1043178402}
-  - component: {fileID: 1043178403}
-  - component: {fileID: 1043178398}
   - component: {fileID: 1043178404}
   m_Layer: 0
   m_Name: PathRenderer
@@ -350,19 +347,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1043178398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1043178397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4887f25a7ee3a4d138c118222c0148f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypoint: {fileID: 1687985369918808, guid: 808598f1dacd34b408a6757c99b1d818, type: 2}
-  newWaypoint: {fileID: 0}
 --- !u!114 &1043178399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -484,28 +468,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1043178402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1043178397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baa96664918c14dcaa240d527737ee3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1043178403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1043178397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3f6f7bb1bd5c4d3fb80f0a67f188eeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1043178404
 MonoBehaviour:
   m_ObjectHideFlags: 0

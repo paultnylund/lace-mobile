@@ -4,15 +4,11 @@ using System.Collections;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-public class API : MonoBehaviour {
-    
-    public Response response;
+public class API {
 
-    public void MakeRequest() {
-        
-        print("API");
-        
-        StartCoroutine(PostRequest());
+    public void Post(MonoBehaviour instance) {
+    
+        instance.StartCoroutine(PostRequest());
     }
 
     IEnumerator PostRequest() {
@@ -37,7 +33,9 @@ public class API : MonoBehaviour {
             data = data.Trim('[');
             data = data.Trim(']');
             
-            response = JsonConvert.DeserializeObject<Response>(data);
+            Global.Instance.response = JsonConvert.DeserializeObject<Response>(data);
+            yield return Global.Instance.response;
+            Global.Instance.responseObtained = true;
         }
     }
     

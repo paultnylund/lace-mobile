@@ -5,24 +5,23 @@ using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json.Linq;
 
-public class AStar : MonoBehaviour {
+public class AStar {
+    
     public static int[][] graph;
-    public static Grid grid;
-    public static bool found = false;
-    static Coordinate startPos = new Coordinate() {X = 2, Y = 3};
-    static Coordinate targetPos = new Coordinate() {X = 3, Y = 0};
-    public void BestPath (API.Response response) {
+    public static Coordinate startPos = new Coordinate() {X = 2, Y = 3};
+    public static Coordinate targetPos = new Coordinate() {X = 3, Y = 0};
+    
+    public void Start() {
+    
+        graph = Global.Instance.response.graph;
         
-        print("AStar");
+        Node startNode = Global.Instance.grid.grid[startPos.X,startPos.Y];
+        Node targetNode = Global.Instance.grid.grid[targetPos.X,targetPos.Y];
         
-        graph = response.graph;
-        grid = new Grid();
-        Node startNode = grid.grid[startPos.X,startPos.Y];
-        Node targetNode = grid.grid[targetPos.X,targetPos.Y];
-        Console.WriteLine(grid.grid[targetPos.X,targetPos.Y]);
         List<Node> openSet = new List<Node>();
         HashSet<Node> closedSet = new HashSet<Node>();
         openSet.Add(startNode);
+        
         while (openSet.Count > 0) {
             Node node = openSet[0];
             for (int i = 1; i < openSet.Count; i++) {
@@ -37,9 +36,9 @@ public class AStar : MonoBehaviour {
             if (node == targetNode) {
                 Console.WriteLine("FOUND PATH!");
                 RetracePath(startNode,targetNode);
-                found = true;
+                Global.Instance.pathFound = true;
             }
-            foreach (Node neighbor in grid.GetNeighbors(node)) {
+            foreach (Node neighbor in Global.Instance.grid.GetNeighbors(node)) {
                 if (!neighbor.isWalkable || closedSet.Contains(neighbor)) {
                     continue;
                 }
@@ -56,15 +55,15 @@ public class AStar : MonoBehaviour {
         }
     }
     static void RetracePath(Node startNode, Node targetNode) {
-        List<Node> path = new List<Node>();
+        List<Node> p = new List<Node>();
         Node currentNode = targetNode;
         while (currentNode != startNode) {
-            path.Add(currentNode);
+            p.Add(currentNode);
             currentNode = currentNode.parentNode;
         }
-        path.Add(startNode);
-        path.Reverse();
-        grid.path = path;
+        p.Add(startNode);
+        p.Reverse();
+        Global.Instance.grid = new GridObj() {path = p};
     }
     static double GetDistance(Node nodeA, Node nodeB) {
         return Math.Sqrt(Math.Pow((nodeB.position.X - nodeA.position.X), 2) + Math.Pow((nodeB.position.Y - nodeA.position.Y), 2));
@@ -89,13 +88,13 @@ public class AStar : MonoBehaviour {
             density = (int)graph[position.X][position.Y];
         }
     }
-    public class Grid {
+    public class GridObj {
         public Node[,] grid;
         int width, height;
-        static int[][] data {get; set;}
+        public static int[][] data {get; set;}
         bool isWalkable;
         public List<Node> path;
-        public Grid() {
+        public GridObj() {
             data = graph;
             width = data[0].Count();
             height = data.Count();
