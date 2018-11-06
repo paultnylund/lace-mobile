@@ -5,19 +5,11 @@ using UnityEngine;
 
 public class Main : MonoBehaviour {
     
-    public API api = new API();
+    API api = new API();
     
     void Start() {
-        
-        try {
-            
-            api.Post(this);
-        }
-        
-        catch {
-            
-            print("Unable to connect :(");
-        }
+    
+        api.Post(this);
     }
     
     void Update() {
@@ -26,19 +18,7 @@ public class Main : MonoBehaviour {
             
             print("Got response! Starting AStar");
             
-            AStar astar = new AStar();
-            
-            astar.Start();
-            
-            // try {
-                
-            //     astar.Start();
-            // }
-            
-            // catch {
-                
-            //     print("AStar Failed");
-            // }
+            AStar.Start();
             
             if (Global.Instance.pathFound) {
                 
@@ -59,6 +39,7 @@ public class Main : MonoBehaviour {
                 
                 print("Finished");
                 Global.Instance.responseObtained = false;
+                
                 Application.Quit();
             }
             

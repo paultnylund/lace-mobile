@@ -5,16 +5,17 @@ using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json.Linq;
 
-public class AStar {
+public class AStar : MonoBehaviour {
     
     public static int[][] graph;
     public static Coordinate startPos = new Coordinate() {X = 2, Y = 3};
     public static Coordinate targetPos = new Coordinate() {X = 3, Y = 0};
     
-    public void Start() {
+    public static void Start() {
     
         graph = Global.Instance.response.graph;
         
+        Global.Instance.grid = new GridObj();
         Node startNode = Global.Instance.grid.grid[startPos.X,startPos.Y];
         Node targetNode = Global.Instance.grid.grid[targetPos.X,targetPos.Y];
         
