@@ -8,8 +8,8 @@ using Newtonsoft.Json.Linq;
 public class AStar : MonoBehaviour {
     
     public static int[][] graph;
-    public static Coordinate startPos = new Coordinate() {X = 2, Y = 3};
-    public static Coordinate targetPos = new Coordinate() {X = 3, Y = 0};
+    public static Coordinate startPos = new Coordinate() {X = Global.Instance.startX, Y = Global.Instance.startY};
+    public static Coordinate targetPos = new Coordinate() {X = Global.Instance.endX, Y = Global.Instance.endY};
     
     public static void Start() {
     
@@ -35,7 +35,6 @@ public class AStar : MonoBehaviour {
             openSet.Remove(node);
             closedSet.Add(node);
             if (node == targetNode) {
-                Console.WriteLine("FOUND PATH!");
                 RetracePath(startNode,targetNode);
                 Global.Instance.pathFound = true;
             }

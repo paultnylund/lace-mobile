@@ -8,13 +8,18 @@ public class Main : MonoBehaviour {
     API api = new API();
     
     void Start() {
-    
-        api.Post(this);
+        
+        Global.Instance.startX = 0;
+        Global.Instance.startY = 0;
+        Global.Instance.endX = 3;
+        Global.Instance.endY = 0;
     }
     
     void Update() {
         
-        if (Global.Instance.responseObtained == true) {
+        api.Post(this);
+        
+        if (Global.Instance.responseObtained) {
             
             print("Got response! Starting AStar");
             
@@ -23,29 +28,9 @@ public class Main : MonoBehaviour {
             if (Global.Instance.pathFound) {
                 
                 print("Path found! Instantiating waypoints");
-                print(Global.Instance.grid.path);
-            
-                try {
-                    
-                    Populate.Start();
-                }
-                
-                catch {
-                    
-                    print("Instantiation Failed");
-                }
-                
-                print("Waypoints Instantiated");
-                
-                print("Finished");
+                Global.Instance.wayFinding = true;
                 Global.Instance.responseObtained = false;
-                
-                Application.Quit();
             }
-            
-        } else {
-            
-            print("Waiting for server...");
         }
     }
 }
