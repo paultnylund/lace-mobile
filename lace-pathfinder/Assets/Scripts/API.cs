@@ -1,8 +1,16 @@
+/**********************
+Import classes
+***********************/
+
 using UnityEngine;
 using UnityEngine.Networking;
 using System.Collections;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
+
+/**********************
+Public class
+***********************/
 
 public class API {
 
@@ -30,11 +38,14 @@ public class API {
         } else {
             
             string data = www.downloadHandler.text;
+            
             data = data.Trim('[');
             data = data.Trim(']');
             
             Global.Instance.response = JsonConvert.DeserializeObject<Response>(data);
+            
             yield return Global.Instance.response;
+            
             Global.Instance.responseObtained = true;
         }
     }

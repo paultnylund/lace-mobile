@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: e71f55699e30e48c68536c0145b2159e
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Maax Trial
+  fontNames:
+  - Maax Trial
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 0f50a3f1df2844587951a320dad9080a, type: 3}
+  - {fileID: 12800000, guid: 4bed1202360034da4b1bbc66271afa10, type: 3}
+  - {fileID: 12800000, guid: 6b31db42ad9f94bee8305219f8a45317, type: 3}
+  - {fileID: 12800000, guid: 055fd9b4251e74e088088bc9231b5f51, type: 3}
+  - {fileID: 12800000, guid: 5b2ba22735d744366a5692c8781e698d, type: 3}
+  - {fileID: 12800000, guid: d4d300e865a44417f97aa3b16b931803, type: 3}
+  - {fileID: 12800000, guid: 4d37247d6744c4bb8bf0462e51134b23, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

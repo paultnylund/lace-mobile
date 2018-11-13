@@ -11,6 +11,7 @@ public class Main : MonoBehaviour {
         
         Global.Instance.startX = 0;
         Global.Instance.startY = 0;
+        
         Global.Instance.endX = 3;
         Global.Instance.endY = 0;
     }

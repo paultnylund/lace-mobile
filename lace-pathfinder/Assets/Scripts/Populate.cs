@@ -8,7 +8,7 @@ public class Populate : MonoBehaviour {
     
     public GameObject waypoint;
 
-    void Update() {
+    void LateUpdate() {
         
         if (Global.Instance.wayFinding == true) {
             
