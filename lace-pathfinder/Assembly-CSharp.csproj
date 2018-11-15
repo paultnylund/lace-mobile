@@ -246,9 +246,8 @@
     <Compile Include="Assets\LeanTouch\Scripts\LeanTouch.cs" />
     <Compile Include="Assets\Scripts\API.cs" />
     <Compile Include="Assets\Scripts\AStar.cs" />
+    <Compile Include="Assets\Scripts\DestinationSelector.cs" />
     <Compile Include="Assets\Scripts\Global.cs" />
-    <Compile Include="Assets\Scripts\IaListener.cs" />
-    <Compile Include="Assets\Scripts\IaRegionListener.cs" />
     <Compile Include="Assets\Scripts\Main.cs" />
     <Compile Include="Assets\Scripts\NavController.cs" />
     <Compile Include="Assets\Scripts\obj\Debug\netcoreapp2.1\Scripts.AssemblyInfo.cs" />
