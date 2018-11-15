@@ -1064,10 +1064,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_NormalColor: {r: 0.40784314, g: 0.8039216, b: 0.5686275, a: 1}
+    m_HighlightedColor: {r: 0.40784314, g: 0.8039216, b: 0.5686275, a: 1}
+    m_PressedColor: {r: 0.383811, g: 0.7075472, b: 0.51581997, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0}
     m_ColorMultiplier: 1.5
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1098,7 +1098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.40784317, g: 0.80392164, b: 0.5686275, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1692,9 +1692,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 378b2d9e08edb4981b022dad49f9133d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisCanvas: {fileID: 654148601}
   startButton: {fileID: 467619119}
-  destinationList: {fileID: 1451214476}
-  destinationCard: {fileID: 1769846065862976, guid: 092469f2527354cb48437cfbef91d480,
+  destinationList: {fileID: 1451214477}
+  destinationCard: {fileID: 114420159957792086, guid: 092469f2527354cb48437cfbef91d480,
     type: 2}
 --- !u!1 &663017083
 GameObject:
@@ -3872,7 +3873,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2011547097
 Transform:
   m_ObjectHideFlags: 0
@@ -3989,7 +3990,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 2}
+  m_AnchoredPosition: {x: 0, y: -20}
   m_SizeDelta: {x: 0, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2068177772

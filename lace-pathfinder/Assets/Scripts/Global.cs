@@ -20,4 +20,6 @@ public class Global : Singleton<Global> {
     public bool pathFound = false; // The path is undetermined at the start of the program
 
     public bool wayFinding = false; // The path will not be drawn at the start of the program
+
+    public DestinationSelector.Destination destination;
 }
