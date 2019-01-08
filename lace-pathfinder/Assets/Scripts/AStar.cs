@@ -20,18 +20,21 @@ public class AStar : MonoBehaviour {
     ***********************/
 
     public static int[][] graph; // Creates a 2-dimensional int array. This will represent the weights of all the nodes in the room
-    public static Coordinate startPos = new Coordinate() {X = Global.Instance.startX, Y = Global.Instance.startY}; // Creates and initiates an object of type Coordinate. This represents the route's start position
-    public static Coordinate targetPos = new Coordinate() {X = Global.Instance.endX, Y = Global.Instance.endY}; // Creates and initiates an object of type Coordinate. This represents the route's end, or target, position
+    public static Coordinate startPos; // Creates and initiates an object of type Coordinate. This represents the route's start position
+    public static Coordinate targetPos; // Creates and initiates an object of type Coordinate. This represents the route's end, or target, position
 
     /**********************
     Start method will run upon being called from Main.cs
     ***********************/
 
-    public static void Start() {
+    public static void startAStar() {
 
         /**********************
         Define method variables
         ***********************/
+
+        startPos = new Coordinate() {X = Global.Instance.startX, Y = Global.Instance.startY};
+        targetPos = new Coordinate() {X = Global.Instance.endX, Y = Global.Instance.endY};
 
         graph = Global.Instance.response.graph; // Sets the graph array equal to the graph array in the global response object
 
@@ -125,7 +128,7 @@ public class AStar : MonoBehaviour {
     }
 
     /**********************
-    GetDistance method utlizes the pythagorean theorem to calculate the distance between two node objects
+    GetDistance method utilizes the pythagorean theorem to calculate the distance between two node objects
     ***********************/
 
     public static double GetDistance(Node nodeA, Node nodeB) {

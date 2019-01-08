@@ -14,36 +14,30 @@ public class DestinationSelector : MonoBehaviour {
 
 	void Update () {
 
-		foreach (var item in destinationList.ActiveToggles()) {
-			Text itemText = item.GetComponentInChildren(typeof(Text)) as Text;
-			foreach (Destination dest in destinations) {
-				if (dest.name == itemText.text) {
-					Global.Instance.endX = dest.x;
-					Global.Instance.endY = dest.y;
-					print(Global.Instance.endX + ", " + Global.Instance.endY);
-				}
-			}
-			// item.GetComponentInChildren<Text>().color = new Color(255, 255, 255, 255);
-			break;
-		}
-
 		if (destinationList.AnyTogglesOn()) {
 		   startButton.interactable = true;
 		} else {
 		   startButton.interactable = false;
 		}
+
+		foreach (Toggle toggle in destinationList.ActiveToggles()) {
+				 foreach (Destination n in destinations) {
+					 if (n.name == toggle.name) {
+						 Global.Instance.endX = n.x;
+	 					 Global.Instance.endY = n.y;
+						 Debug.Log(Global.Instance.endX + ", " + Global.Instance.endY);
+					 }
+				 }
+    }
 	}
 
 	void Awake () {
 
-		destinations.Add(new Destination("Cafe", 3, 3));
-		destinations.Add(new Destination("Lounge", 2, 3));
-		destinations.Add(new Destination("Library", 2, 3));
-		destinations.Add(new Destination("Bar", 0, 2));
-		destinations.Add(new Destination("Garden", 3, 0));
-		destinations.Add(new Destination("Wardrobe", 2, 1));
-		destinations.Add(new Destination("Gallery", 3, 2));
-		destinations.Add(new Destination("Terminal", 3, 3));
+		destinations.Add(new Destination("Swing Set", 3, 7));
+		destinations.Add(new Destination("Apartment", 12, 19));
+		destinations.Add(new Destination("Bike Rack", 16, 11));
+		destinations.Add(new Destination("Entryway", 15, 0));
+		destinations.Add(new Destination("Garden", 0, 13));
 
 		int numDestinations = destinations.Count;
 
@@ -52,7 +46,7 @@ public class DestinationSelector : MonoBehaviour {
 		foreach (Destination n in destinations) {
 
 			Toggle newDestinationCard = Instantiate(destinationCard, Vector2.up * yOffset, Quaternion.identity);
-			// newDestinationCard.onValueChanged.AddListener(destCardToggleChanged);
+			newDestinationCard.name = n.name;
 			newDestinationCard.group = destinationList;
 
 			Text newDestinationName = newDestinationCard.GetComponentInChildren(typeof(Text)) as Text;
@@ -71,20 +65,10 @@ public class DestinationSelector : MonoBehaviour {
 	}
 
 	public void StartNavigation() {
-      Debug.Log("You have clicked the button!");
+      Debug.Log("You have tapped the button!");
 			thisCanvas.enabled = false;
+			Global.Instance.wayFinding = true;
   }
-
-	// public void destCardToggleChanged(bool isOn) {
-  //  if (isOn) {
-	//
-  //      Debug.Log ("Leaderboard On");
-	//
-  //  } else {
-	//
-  //      Debug.Log ("Leaderboard Off");
-  //  }
-	// }
 
 	public class Destination {
 
